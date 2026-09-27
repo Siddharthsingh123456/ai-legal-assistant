@@ -2,5 +2,10 @@
   "buildCommand": "cd Ai-Lawyer-Main && npm install && npm run build",
   "outputDirectory": "Ai-Lawyer-Main/dist",
   "framework": "vite",
-  "cleanUrls": true
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
